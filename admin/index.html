@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>EllzHAXX Admin Panel</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="container">
+    <div id="loginBox" class="card">
+      <h2>Admin Login</h2>
+      <p>Enter master key to open panel</p>
+      <input id="masterKey" placeholder="Master Key">
+      <button id="loginBtn">Open Panel</button>
+      <div id="loginMsg" class="muted"></div>
+    </div>
+
+    <div id="panel" class="hidden">
+      <header>
+        <h2>Admin Panel</h2>
+        <div id="stats" class="muted"></div>
+      </header>
+
+      <section class="card">
+        <h3>Generate Keys</h3>
+        <label>How many to generate</label>
+        <input id="genCount" placeholder="1">
+        <label>Expiration (format 1H,1D or LT)</label>
+        <input id="genExpiry" placeholder="1H">
+        <button id="genBtn">Generate</button>
+        <div id="genResult"></div>
+      </section>
+
+      <section class="card">
+        <h3>Active Keys</h3>
+        <div id="keysList"></div>
+      </section>
+
+    </div>
+  </main>
+  <script src="admin.js"></script>
+</body>
+</html>

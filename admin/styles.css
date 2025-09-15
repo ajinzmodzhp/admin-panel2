@@ -1,0 +1,11 @@
+:root{--bg:#0f1720;--card:#111827;--muted:#9aa4b2}
+*{box-sizing:border-box}
+body{font-family:Inter,system-ui,Segoe UI,Roboto,Arial;background:linear-gradient(180deg,#0b1220,#0f1720);color:#e6eef6;margin:0;padding:20px}
+.container{max-width:980px;margin:0 auto}
+.card{background:rgba(255,255,255,0.03);padding:16px;border-radius:12px;margin-bottom:12px}
+.hidden{display:none}
+input{width:100%;padding:10px;margin:6px 0;border-radius:8px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:inherit}
+button{padding:10px 14px;border-radius:10px;border:none;background:#2b6df6;color:white}
+.muted{color:var(--muted)}
+#keysList .item{display:flex;justify-content:space-between;padding:8px;border-radius:8px;margin:6px 0;background:rgba(0,0,0,0.25)}
+.copybtn{margin-left:8px}
